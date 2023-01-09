@@ -79,8 +79,7 @@ export default function Home() {
               <img src="/poster.png" className="max-w-xl rounded-lg shadow-2xl" />
               <div>
                 <h1 className="text-5xl font-bold">Selamat Datang!</h1>
-                <p className="py-6 pr-64 leading-8">Menyediakan beragam desain cv dengan desain yang elegan, dengan cv yang menarik tentunya akan membuat 
-                    HRD semakin tertarik dengan cv anda.</p>
+                <p className="py-6 pr-64 leading-8">Menyediakan beragam desain cv dengan desain yang menarik. <br/>CV yang bagus adalah CV yang singkat, padat, dan jelas ringkasannya sehingga tidak membingungkan recruiter.</p>
                 <a id="button-list" href="#list"><button className="text-xs btn btn-primary tracking-widest">Lihat CV</button></a>
               </div>
             </div>
