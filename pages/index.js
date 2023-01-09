@@ -151,7 +151,7 @@ export default function Home() {
                                   </div>
                               </div>
                           </div>
-                          <a href={cv.link} target="_blank" rel="noopener" className="btn btn-primary bg-warning border-0 tracking-widest">Beli!</a>
+                          <a href={cv.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-warning border-0 tracking-widest">Beli!</a>
                       </div>
                   </div>
               </div>
