@@ -13,55 +13,55 @@ export default function Home() {
     {
       judul: "CV1", modal: "modal-1",
       harga: "Rp20.000",
-      image: "/cv/CV1.jpg",
+      image: "/cv/CV1.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV1."
     },
     {
       judul: "CV2", modal: "modal-2",
       harga: "Rp20.000",
-      image: "/cv/CV2.jpg",
+      image: "/cv/CV2.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV2."
     },
     {
       judul: "CV3", modal: "modal-3",
       harga: "Rp20.000",
-      image: "/cv/CV3.jpg",
+      image: "/cv/CV3.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV3."
     },
     {
         judul: "CV4", modal: "modal-4",
         harga: "Rp20.000",
-        image: "/cv/CV4.jpg",
+        image: "/cv/CV4.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV4."
     },
     {
         judul: "CV5", modal: "modal-5",
         harga: "Rp20.000",
-        image: "/cv/CV5.jpg",
+        image: "/cv/CV5.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV5."
     },
     {
         judul: "CV6", modal: "modal-6",
         harga: "Rp20.000",
-        image: "/cv/CV6.jpg",
+        image: "/cv/CV6.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV6."
     },
     {
         judul: "CV7", modal: "modal-7",
         harga: "Rp20.000",
-        image: "/cv/CV7.jpg",
+        image: "/cv/CV7.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV7."
     },
     {
         judul: "CV8", modal: "modal-8",
         harga: "Rp20.000",
-        image: "/cv/CV8.jpg",
+        image: "/cv/CV8.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV8."
     },
     {
         judul: "CV9", modal: "modal-9",
         harga: "Rp20.000",
-        image: "/cv/CV9.jpg",
+        image: "/cv/CV9.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV9."
     }
   ];
@@ -132,7 +132,7 @@ export default function Home() {
           {cv.map(cv => {
             return (
             <div className="card w-96 bg-base-100 shadow-md" key={cv.id}>
-              <figure><Image src={cv.image} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" /></figure>
+              <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" /></figure>
                   <div className="card-body px-4 py-6 lg:p-8">
                       <h2 className="card-title font-bold">Kode: {cv.judul}</h2>
                       <p className="mb-6">💰&nbsp; {cv.harga}</p>
@@ -145,7 +145,7 @@ export default function Home() {
                                   <div className="hidden lg:flex lg:justify-center modal-action px-8 py-4 mt-0 border-t-2">
                                       <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
                                   </div>
-                                  <Image src={cv.image} width={100} height={100} class="w-full" alt="Refresh jika gambar tidak muncul" />
+                                  <Image src={cv.image} quality={100} width={100} height={100} class="w-full" alt="Refresh jika gambar tidak muncul" />
                                   <div className="modal-action flex justify-center px-8 py-4 mt-0 border-t-2">
                                       <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
                                   </div>
