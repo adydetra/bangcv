@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import Poster from '../public/poster.png'
 import Info from '../public/info.jpg'
 import Faq from '../public/faq.jpg'
 import Faq2 from '../public/faq-2.jpg'
@@ -76,7 +77,7 @@ export default function Home() {
 
         <div className="hidden lg:grid hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
-              <img src="/poster.png" className="max-w-xl rounded-lg shadow-2xl" />
+            <Image src={Poster} className="max-w-xl rounded-lg shadow-2xl" />
               <div>
                 <h1 className="text-5xl font-bold">Selamat Datang!</h1>
                 <p className="py-6 pr-64 leading-8">Menyediakan beragam desain cv dengan desain yang menarik. <br/>CV yang bagus adalah CV yang singkat, padat, dan jelas ringkasannya sehingga tidak membingungkan recruiter.</p>
