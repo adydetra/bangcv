@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import Logo from '../public/logo.png'
 import Poster from '../public/poster.png'
 import Info from '../public/info.jpg'
 import Faq from '../public/faq.jpg'
@@ -88,7 +89,7 @@ export default function Home() {
 
         <section className="container m-auto 2xl:px-20 pt-8 pb-16 px-12" id="app">
 
-          <div className="flex justify-center gap-8 flex-wrap">
+          <div className="hidden lg:flex justify-center gap-8 flex-wrap">
               <label for="my-modal-1" className="btn modal-button w-60 lg:ml-16 lg:btn lg:modal-button">Info</label>
               <label for="my-modal-2" className="btn modal-button w-60 lg:btn lg:modal-button">Hasil Print</label>
               <label for="my-modal-3" className="btn modal-button w-60 lg:btn lg:modal-button">Testimoni</label>
@@ -124,7 +125,9 @@ export default function Home() {
               </div>
           </div>
 
-          <h2 id="list" className="text-3xl font-bold mb-16 text-center mt-12">Desain CV</h2>
+          <Image src={Logo} className="w-20 m-auto lg:hidden" alt="Logo" />
+
+          <h2 id="list" className="text-2xl lg:text-3xl font-bold mb-16 text-center mt-12 lg:mt-24">Pick the CV Design</h2>
 
 
           <div className="flex flex-wrap gap-12 justify-center">
