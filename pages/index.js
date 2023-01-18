@@ -138,7 +138,7 @@ export default function Home() {
                 <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" unoptimized/></figure>
                     <div className="card-body px-4 pt-2 pb-1 lg:py-6 lg:p-8">
                         <h2 className="card-title font-bold hidden lg:block">Kode: {cv.judul}</h2>
-                        <p className="lg:mb-6">💰&nbsp; {cv.harga}</p>
+                        <p className="lg:mb-6 text-xs lg:text-lg">💰&nbsp; {cv.harga}</p>
                         <div className="card-actions">
                             <label for={cv.modal} className="hidden lg:inline-flex btn modal-button">Lihat</label>
 
