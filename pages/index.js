@@ -130,14 +130,14 @@ export default function Home() {
           <h2 id="list" className="text-2xl lg:text-3xl font-bold mb-16 text-center mt-12 lg:mt-24">Pick the CV Design</h2>
 
 
-          <div className="flex flex-wrap gap-12 justify-center">
+          <div className="flex flex-wrap gap-10 justify-center">
 
             {cv.map(cv => {
               return (
-              <div className="card bg-base-100 shadow-md basis-5/12 lg:basis-3/12 rounded-none" key={cv.id}>
+              <div className="card bg-base-100 shadow-md basis-36 lg:basis-3/12 rounded-none" key={cv.id}>
                 <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" unoptimized/></figure>
-                    <div className="card-body px-4 py-6 lg:p-8">
-                        <h2 className="card-title font-bold">Kode: {cv.judul}</h2>
+                    <div className="card-body px-4 pt-2 pb-1 lg:py-6 lg:p-8">
+                        <h2 className="card-title font-bold hidden lg:block">Kode: {cv.judul}</h2>
                         <p className="lg:mb-6">💰&nbsp; {cv.harga}</p>
                         <div className="card-actions">
                             <label for={cv.modal} className="hidden lg:inline-flex btn modal-button">Lihat</label>
