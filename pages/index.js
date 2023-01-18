@@ -132,39 +132,36 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-12 justify-center">
 
-          {cv.map(cv => {
-            return (
-            <div className="card w-96 bg-base-100 shadow-md" key={cv.id}>
-              <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" unoptimized/></figure>
-                  <div className="card-body px-4 py-6 lg:p-8">
-                      <h2 className="card-title font-bold">Kode: {cv.judul}</h2>
-                      <p className="mb-6">💰&nbsp; {cv.harga}</p>
-                      <div className="card-actions">
-                          <label for={cv.modal} className="btn modal-button">Lihat</label>
+            {cv.map(cv => {
+              return (
+              <div className="card bg-base-100 shadow-md basis-5/12 lg:basis-3/12 rounded-none" key={cv.id}>
+                <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" unoptimized/></figure>
+                    <div className="card-body px-4 py-6 lg:p-8">
+                        <h2 className="card-title font-bold">Kode: {cv.judul}</h2>
+                        <p className="lg:mb-6">💰&nbsp; {cv.harga}</p>
+                        <div className="card-actions">
+                            <label for={cv.modal} className="hidden lg:inline-flex btn modal-button">Lihat</label>
 
-                          <input type="checkbox" id={cv.modal} className="modal-toggle" />
-                          <div className="modal sm:modal-middle">
-                              <div className="modal-box p-0 w-11/12 max-w-5xl">
-                                  <div className="hidden lg:flex lg:justify-center modal-action px-8 py-4 mt-0 border-t-2">
-                                      <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
-                                  </div>
-                                  <Image src={cv.image} quality={100} width={100} height={100} class="w-full" alt="Refresh jika gambar tidak muncul" unoptimized/>
-                                  <div className="modal-action flex justify-center px-8 py-4 mt-0 border-t-2">
-                                      <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
-                                  </div>
-                              </div>
-                          </div>
-                          <a href={cv.link} target="_blank" rel="noreferrer" className="btn btn-primary bg-warning border-0 tracking-widest">Beli!</a>
-                      </div>
-                  </div>
-              </div>
-              );
+                            <input type="checkbox" id={cv.modal} className="modal-toggle" />
+                            <div className="modal sm:modal-middle">
+                                <div className="modal-box p-0 w-11/12 max-w-5xl">
+                                    <div className="hidden lg:flex lg:justify-center modal-action px-8 py-4 mt-0 border-t-2">
+                                        <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
+                                    </div>
+                                    <Image src={cv.image} quality={100} width={100} height={100} class="w-full" alt="Refresh jika gambar tidak muncul" unoptimized/>
+                                    <div className="modal-action flex justify-center px-8 py-4 mt-0 border-t-2">
+                                        <label for={cv.modal} className="btn bg-red-600 border-0 w-20">X</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href={cv.link} target="_blank" rel="noreferrer" className="hidden lg:inline-flex btn btn-primary bg-warning border-0 tracking-widest">Beli!</a>
+                        </div>
+                    </div>
+                </div>
+                );
               })}
-              
-              {/* <div className="w-full flex justify-center">
-                  <button className="btn btn-primary my-20">Lebih banyak...</button>
-              </div> */}
-          </div>
+                
+            </div>
 
         </section>
 
