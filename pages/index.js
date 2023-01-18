@@ -13,55 +13,55 @@ export default function Home() {
   const cv = [
     {
       judul: "CV1", modal: "modal-1",
-      harga: "Rp20.000",
+      harga: "Rp10.000",
       image: "/cv/CV1.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV1."
     },
     {
       judul: "CV2", modal: "modal-2",
-      harga: "Rp20.000",
+      harga: "Rp10.000",
       image: "/cv/CV2.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV2."
     },
     {
       judul: "CV3", modal: "modal-3",
-      harga: "Rp20.000",
+      harga: "Rp10.000",
       image: "/cv/CV3.svg",
       link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV3."
     },
     {
         judul: "CV4", modal: "modal-4",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV4.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV4."
     },
     {
         judul: "CV5", modal: "modal-5",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV5.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV5."
     },
     {
         judul: "CV6", modal: "modal-6",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV6.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV6."
     },
     {
         judul: "CV7", modal: "modal-7",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV7.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV7."
     },
     {
         judul: "CV8", modal: "modal-8",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV8.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV8."
     },
     {
         judul: "CV9", modal: "modal-9",
-        harga: "Rp20.000",
+        harga: "Rp10.000",
         image: "/cv/CV9.svg",
         link: "https://api.whatsapp.com/send?phone=6285155299160&text=Halo%20Saya%20ingin%20membeli%20CV9."
     }
@@ -78,7 +78,7 @@ export default function Home() {
 
         <div className="hidden lg:grid hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
-            <Image src={Poster} className="max-w-xl rounded-lg shadow-2xl" alt="Poster" />
+            <Image src={Poster} className="max-w-xl rounded-lg shadow-2xl" alt="Poster" priority/>
               <div>
                 <h1 className="text-5xl font-bold">Selamat Datang!</h1>
                 <p className="py-6 pr-64 leading-8">Menyediakan beragam desain cv dengan desain yang menarik. <br/>CV yang bagus adalah CV yang jelas ringkasannya sehingga tidak membingungkan recruiter.</p>
