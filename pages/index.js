@@ -134,7 +134,7 @@ export default function Home() {
 
             {cv.map(cv => {
               return (
-              <div className="card bg-base-100 shadow-md basis-36 lg:basis-3/12 rounded-none" key={cv.id}>
+              <div className="card bg-base-100 shadow-md basis-5/12 lg:basis-3/12 rounded-none" key={cv.id}>
                 <figure><Image src={cv.image} quality={100} width={100} height={100} class="shadow w-full" alt="Refresh jika gambar tidak muncul" unoptimized/></figure>
                     <div className="card-body px-4 pt-2 pb-1 lg:py-6 lg:p-8">
                         <h2 className="card-title font-bold hidden lg:block">Kode: {cv.judul}</h2>
