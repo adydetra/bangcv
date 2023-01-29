@@ -70,7 +70,7 @@ export default function Home() {
     <>
       <Head>
         <title>Bang CV | Jasa Desain CV</title>
-        <meta name="description" content="Menyediakan beragam desain cv dengan desain yang elegan, dengan cv yang menarik tentunya akan membuat HRD semakin tertarik dengan cv anda." />
+        <meta name="description" content="Menyediakan beragam desain cv dengan desain yang menarik. CV yang bagus adalah CV yang jelas ringkasannya sehingga tidak membingungkan recruiter." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
